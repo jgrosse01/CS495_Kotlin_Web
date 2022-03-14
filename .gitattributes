@@ -7,3 +7,10 @@ src/main/resources/static/bootstrap/js/bootstrap.js linguist-vendored
 src/main/resources/static/jquery/jquery.slim.min.js linguist-vendored
 src/main/resources/static/bootstrap/js/bootstrap.min.js linguist-vendored
 
+src/main/resources/static/bootstrap/css/bootstrap.css linguist-vendored
+src/main/resources/static/bootstrap/css/bootstrap-reboot.min.css linguist-vendored
+src/main/resources/static/bootstrap/css/bootstrap.min.css linguist-vendored
+src/main/resources/static/bootstrap/css/bootstrap-reboot.css linguist-vendored
+src/main/resources/static/bootstrap/css/bootstrap-grid.min.css linguist-vendored
+src/main/resources/static/bootstrap/css/bootstrap-grid.css linguist-vendored
+
