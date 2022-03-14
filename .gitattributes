@@ -1,1 +1,8 @@
-src/main/resources/static/* linguist-vendored
+src/main/resources/static/bootstrap/js/bootstrap.bundle.js linguist-vendored
+src/main/resources/static/jquery/jquery.slim.js linguist-vendored
+src/main/resources/static/jquery/jquery.min.js linguist-vendored
+src/main/resources/static/jquery/jquery.js linguist-vendored
+src/main/resources/static/bootstrap/js/bootstrap.bundle.min.js linguist-vendored
+src/main/resources/static/bootstrap/js/bootstrap.js linguist-vendored
+src/main/resources/static/jquery/jquery.slim.min.js linguist-vendored
+src/main/resources/static/bootstrap/js/bootstrap.min.js linguist-vendored
