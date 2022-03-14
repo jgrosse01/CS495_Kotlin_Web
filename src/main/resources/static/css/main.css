@@ -1,0 +1,60 @@
+/* Import Oswald Font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+/* Import Timos */
+@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@700&display=swap');
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background: #111;
+    color: #DDD;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+p {
+    color: #AAA;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+.mainpage {
+    border: solid #D23 .2em;
+    padding: 0; 
+    margin: 0 auto; 
+    background: #333
+}
+
+.center-text {
+    text-align: center;
+}
+
+.carousel-image {
+    width: 65%;
+    margin: 0 auto;
+    border: .4em #D23 solid;
+    border-radius: .3em;
+}
+
+.image {
+    width: 65%;
+    margin: 2em auto 2em;
+    border: .4em #D23 solid;
+    border-radius: .3em;
+}
+
+#web-head {
+    font-family: 'Tinos', serif;
+    margin: 0 auto;
+    font-size: 5em;
+    color: #FFF;
+}

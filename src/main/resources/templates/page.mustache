@@ -1,0 +1,64 @@
+{{> header}}
+
+{{> sidebar}}
+
+
+<!--Main Page-->
+<div class="container mainpage">
+
+    <!--Header-->
+    <div class="row" style="margin: 0 auto; background:#D23;">
+        <h1 id="web-head">{{title}}</h1>
+    </div>
+    <!--End Header-->
+
+    <!--Navbar In Page-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #222;">
+        <div class="container-fluid">
+
+            <!--Hamburger Button-->
+            <button type="button" id="sidebarCollapse" class="navbar-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!--Linking Button-->
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-align-justify"></i>
+            </button>
+
+            <!--Actual Bar-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <h3 class="nav navbar-nav ml-auto">
+                    Jake T. Gross&eacute;
+                </h3>
+            </div>
+        </div>
+    </nav>
+    <!--End Navbar-->
+
+    <!--Page Content Starts-->
+    <div class="row">
+        <div class="col-12" style="text-align: center; background:#D23; margin: 0 auto 2em;">
+            <h1>{{subtitle}}</h1>
+        </div>
+    </div>
+
+    <img class="d-block" src="images/{{image1}}" alt="{{imagedesc}}" style="border-radius: .3em;">
+
+    <!-- Begin Lower Page Congent -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card" style="width: 70%; margin: 0 auto; background: #333; border: none;">
+                <h2>{{phead}}</h2>
+                <p>{{paragraph}}</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Lower Page Content -->
+
+
+
+
+{{> footer}}
