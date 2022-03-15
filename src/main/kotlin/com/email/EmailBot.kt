@@ -1,5 +1,6 @@
 package com.email
 
+// imports don't all get recognized, they do all work though.
 import com.fileread.readFile
 import org.springframework.mail.javamail.JavaMailSenderImpl
 import org.springframework.mail.javamail.MimeMessageHelper
@@ -26,12 +27,15 @@ fun sendEmail(recipient: String, name: String, submittedEmail: String, subject: 
     mailSender.setUsername(credentials[0])
     mailSender.setPassword(credentials[1])
 
+    // make the message and the object which will add the elements of the email to the message
     val messageManager = mailSender.createMimeMessage()
     var messageHelper = MimeMessageHelper(messageManager, true)
+    // add the elements of the email
     messageHelper.setFrom(submittedEmail)
     messageHelper.setSubject(subject)
     messageHelper.setText("$name $message", true)
     messageHelper.addTo(recipient)
 
+    // send email
     mailSender.send(messageManager)
 }

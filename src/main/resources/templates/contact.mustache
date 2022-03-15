@@ -1,0 +1,72 @@
+{{> header}}
+
+{{> sidebar}}
+
+
+<!--Main Page-->
+<div class="container mainpage">
+
+    <!--Header-->
+    <div class="row" style="margin: 0 auto; background:#D23;">
+        <h1 id="web-head">{{title}}</h1>
+    </div>
+    <!--End Header-->
+
+    <!--Navbar In Page-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #222;">
+        <div class="container-fluid">
+
+            <!--Hamburger Button-->
+            <button type="button" id="sidebarCollapse" class="navbar-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!--Linking Button-->
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-align-justify"></i>
+            </button>
+
+            <!--Actual Bar-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <h3 class="nav navbar-nav ml-auto">
+                    Jake T. Gross&eacute; (Page Not Yet Implemented)
+                </h3>
+            </div>
+        </div>
+    </nav>
+    <!--End Navbar-->
+
+    <!--Page Content Starts-->
+    <div class="row">
+        <div class="col-12" style="text-align: center; background:#D23; margin: 0 auto 2em;">
+            <h1>{{subtitle}}</h1>
+        </div>
+    </div>
+
+    <div class="col-12" style="width: 80%; margin: 0 auto 0.8em;">
+        <!-- FORM NOT YET IMPLEMENTED. HAVING PROBLEMS. -->
+        <form action="#" modelAttribute="EmailMessage"> <!--method="post"-->
+            <div class="form-group">
+                <label for="nameInput">Preferred Name</label>
+                <input type="text" class="form-control" path="setName" id="nameInput" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+                <label for="emailInput">Email address</label>
+                <input type="email" class="form-control" path="setEmail" id="emailInput" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="subjectInput">Subject</label>
+                <input type="text" class="form-control" path="setSubject" id="subjectInput" placeholder="Subject of message">
+            </div>
+            <div class="form-group">
+                <label for="messageInput">Message</label>
+                <input type="text" class="form-control" path="setMessage" id="messageInput" placeholder="Type message here">
+            </div>
+            <button type="submit" class="btn btn-primary main-btn">Submit Form</button>
+        </form>
+    </div>
+
+
+{{> footer}}
