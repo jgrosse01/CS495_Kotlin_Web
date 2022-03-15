@@ -1,7 +1,7 @@
 # CS495_Kotlin_Web
 A Spring Boot WebApp developed in Kotlin using Gradle for Carroll College CS Seminar.
 
-This assignment is not complete to the ideal that I would have liked it but still well surpasses the minimum requirements of the project.
+This assignment is not complete to the ideal that I would have liked it but still well surpasses the minimum requirements of the project (printing "Hello World" to a web page).
 
 Unimplemented features:
 1. Email bot that sent email when submitting the "Contact Us" form.
