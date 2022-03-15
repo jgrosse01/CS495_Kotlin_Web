@@ -15,7 +15,7 @@ class HtmlController {
         model["title"] = "Welcome to Jake.com"
         model["subtitle"] = "Yes... I am Jake"
         model["phead"] = "Who is this man?! (Or boy if you really wanna be mean like that...)"
-        model["paragraph"] = readFile("home")
+        model["paragraph"] = readFile("static/paragraphs/home")
         model["imagedesc"] = ""
         model["image1"] = "jakeportrait.png"
         model["image2"] = "jakehand.png"
@@ -28,7 +28,7 @@ class HtmlController {
         model["title"] = "About Me"
         model["subtitle"] = "This is Still Jake, Just New Pictures"
         model["phead"] = "A brief description if you would!"
-        model["paragraph"] = readFile("about")
+        model["paragraph"] = readFile("static/paragraphs/about")
         model["imagedesc"] = ""
         model["image1"] = ""
         model["image2"] = ""
@@ -41,7 +41,7 @@ class HtmlController {
         model["title"] = "Jake's Education"
         model["subtitle"] = "Here's an image of a college diploma."
         model["phead"] = "So what did I really learn? *cough cough nothing cough*"
-        model["paragraph"] = readFile("education")
+        model["paragraph"] = readFile("static/paragraphs/education")
         model["imagedesc"] = ""
         model["image1"] = ""
         return "page"
@@ -52,7 +52,7 @@ class HtmlController {
         model["title"] = "All I've Accomplished"
         model["subtitle"] = "...in life is nothing. Except this fence!"
         model["phead"] = "This is what I use to mask my feelings of inadequacy."
-        model["paragraph"] = readFile("accomplishments")
+        model["paragraph"] = readFile("static/paragraphs/accomplishments")
         model["imagedesc"] = ""
         model["image1"] = ""
         model["image2"] = ""
@@ -65,7 +65,7 @@ class HtmlController {
         model["title"] = "Passion is for the Weak"
         model["subtitle"] = "Kidding of Course..."
         model["phead"] = "I like trains!"
-        model["paragraph"] = readFile("passions")
+        model["paragraph"] = readFile("static/paragraphs/passions")
         model["imagedesc"] = ""
         model["image1"] = ""
         model["image2"] = ""
@@ -78,7 +78,7 @@ class HtmlController {
         model["title"] = "I AM STRONG (and weak)"
         model["subtitle"] = "But in What Categories?"
         model["phead"] = "Strengths and Weaknesses are as Follows:"
-        model["paragraph"] = readFile("strengthAndWeakness")
+        model["paragraph"] = readFile("static/paragraphs/strengthAndWeakness")
         model["imagedesc"] = ""
         model["image1"] = ""
         return "page"
@@ -96,7 +96,7 @@ class HtmlController {
         model["title"] = "Disclaimer"
         model["subtitle"] = "Simply to Disclaim"
         model["phead"] = "You may be thinking..."
-        model["paragraph"] = readFile("disclaimer")
+        model["paragraph"] = readFile("static/paragraphs/disclaimer")
         model["imagedesc"] = ""
         model["image1"] = ""
         return "page"
