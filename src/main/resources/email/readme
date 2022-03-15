@@ -1,6 +1,6 @@
 In this folder (email), create a file named "creds" (without quotation marks).
 
-In this file, you will input an email address and password to run this program properly and be able to send emails.
+In this file, you will input an email address and password simply with a space between them to run this program properly and be able to send emails.
 
 For security reasons, these credentials will not be sent over email, but will rather be written down on a piece of
 paper and given to those who need to use this program.
