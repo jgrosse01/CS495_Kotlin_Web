@@ -6,17 +6,19 @@ import org.springframework.mail.javamail.JavaMailSenderImpl
 import org.springframework.mail.javamail.MimeMessageHelper
 import java.util.*
 
-// mail sender and mail properties
-val mailSender = JavaMailSenderImpl()
-val properties = Properties()
+
 // credentials are read in directly and stored because I do not care about the security of this account
-val credentials = readFile("creds").split(" ")
+val credentials = readFile("email/creds").split(" ")
 
 
 /**
  * A basic function to send emails.
  */
 fun sendEmail(recipient: String, name: String, submittedEmail: String, subject: String, message: String) {
+    // mail sender and mail properties
+    val mailSender = JavaMailSenderImpl()
+    val properties = Properties()
+
     // configure mail sender properties
     properties["mail.smtp.host"] = "smtp.gmail.com"
     properties["mail.smtp.port"] = "465"
@@ -31,9 +33,10 @@ fun sendEmail(recipient: String, name: String, submittedEmail: String, subject: 
     val messageManager = mailSender.createMimeMessage()
     var messageHelper = MimeMessageHelper(messageManager, true)
     // add the elements of the email
-    messageHelper.setFrom(submittedEmail)
+    // sending to and from the same address
+    messageHelper.setFrom(recipient)
     messageHelper.setSubject(subject)
-    messageHelper.setText("$name $message", true)
+    messageHelper.setText("Name: $name Email: $submittedEmail \nMessage: $message", true)
     messageHelper.addTo(recipient)
 
     // send email

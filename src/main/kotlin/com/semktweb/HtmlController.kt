@@ -1,6 +1,7 @@
 package com.semktweb
 
 import com.email.EmailMessage
+import com.email.sendEmail
 import com.fileread.readFile
 
 import org.springframework.stereotype.Controller
@@ -91,6 +92,7 @@ class HtmlController {
         model["email"] = emailMessage.getEmail()
         model["subject"] = emailMessage.getSubject()
         model["message"] = emailMessage.getMessage()
+        sendEmail("grosse.tech.101@gmail.com", emailMessage.getName(), emailMessage.getEmail(), emailMessage.getSubject(), emailMessage.getMessage())
         return "form_submit"
     }
 
